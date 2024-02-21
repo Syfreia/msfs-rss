@@ -48,4 +48,4 @@ for post in posts:
         img_headers = requests.head(enclosure).headers
         fe.enclosure(enclosure, img_headers['content-length'], img_headers['content-type'])
 
-fg.atom_file('feeds/msfs2.xml', pretty=True)
+fg.atom_file('feeds/msfs_extra.xml', pretty=True)
