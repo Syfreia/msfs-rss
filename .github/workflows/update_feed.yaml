@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.MSFS_RSS_PAT }}
+          token: ${{ github.token }} # Personal Access Token with repo scope
 
       - name: Install Python modules
         run: pip3 install -r requirements.txt
