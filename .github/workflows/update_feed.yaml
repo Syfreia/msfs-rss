@@ -23,6 +23,9 @@ jobs:
       - name: Update MSFS feed
         run: python3 src/msfs.py
 
+      - name: Update MSFS extra feed
+        run: python3 src/msfs_extra.py
+
       - name: Update thresholdx feed
         run: python3 src/thresholdx.py
 
